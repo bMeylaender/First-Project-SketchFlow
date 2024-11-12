@@ -17,11 +17,28 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;  
-    padding-left : 100px;
-    padding-right: 100px ;
+    
+    padding-right: 5em;
+    padding-left: 5em;
     
 
 
+}
+
+@media (max-width: 768px) {
+    #toolbar {
+        width: 90vw; 
+        height: auto; 
+        flex-direction: column; 
+        padding: 10px; 
+    }
+
+    #toolbar button,
+    #toolbar label,
+    #toolbar input {
+        width: 100%; 
+        margin: 10px 0; 
+    }
 }
 
 
@@ -43,6 +60,12 @@ body{
 .shape:focus {
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
+
+button:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
 
 
 h1 {
@@ -143,48 +166,21 @@ canvas {
 }
 
 .gallery-thumbnail:hover {
-    transform: scale(1.05); /* Scale effect on hover */
+    transform: scale(1.05); 
 }
 
-.gallery-navbar{
-    overflow: hidden;
-    background-color: #000000;
+
+.social-share a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #007BFF; 
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
 
-.subnav{
-    float: left;
-    overflow: hidden;
-}
-
-.subnav .subnavbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .subnav:hover .subnavbtn {
-  background-color: red;
-}
-
-.gallery-container {
-  display: none;
-  position: absolute;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0);
-  width: 100%;
-  z-index: 1;
-}
-
-.subnav-content img {
-  float: left;
-  color: white;
-  text-decoration: none;
-}
-.subnav:hover .gallery-container {
-  display: block;
+.social-share a:hover {
+    background-color: #0056b3; 
 }

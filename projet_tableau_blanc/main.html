@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tableau blanc interactif</title>
     <link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -71,18 +71,24 @@
                     Ajouter à la galerie
                 </button>
             </div>
+            <div class="social-share">
+                <h3>Partager le site:</h3>
+                <a href="#" id="share-facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" id="share-twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                
+                <a href="#" id="share-pinterest" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+                
+            </div>
         </div>
         <canvas id="whiteboard" ></canvas>
     </div>
-    <div class="gallery-navbar">
-        <div class="subnav">
-            <div id="gallery" class="gallery-container">
-                <!-- prévisu ici -->
-            </div>
-            <button class="sunavbtn">Gallery </button>
-            
-        </div>
+   
+    <div id="gallery" class="gallery-container">
+        <!-- prévisu ici -->
     </div>
+        
+           
+    
     <script src="app.js" defer></script>
 </body>
 </html>

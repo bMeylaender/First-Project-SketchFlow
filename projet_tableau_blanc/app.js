@@ -262,3 +262,11 @@ function updateGallery() {
     });
 }
 
+const siteUrl = encodeURIComponent(window.location.href); 
+const msg = encodeURIComponent("Réveillez votre âme d'artiste grâce à SketchFlow")
+const siteTitle = encodeURIComponent(document.title); 
+
+document.getElementById('share-facebook').href = `https://www.facebook.com/sharer/sharer.php?u=${siteUrl}`;
+document.getElementById('share-twitter').href = `https://twitter.com/intent/tweet?url=${siteUrl}&text=${msg}`;
+
+document.getElementById('share-pinterest').href = `https://pinterest.com/pin/create/button/?url=${siteUrl}&description=${msg}`;
