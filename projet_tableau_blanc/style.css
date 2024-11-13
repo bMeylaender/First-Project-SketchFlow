@@ -174,7 +174,7 @@ canvas {
     display: inline-block;
     margin: 5px;
     padding: 10px 15px;
-    background-color: #007BFF; 
+    background-color: black; 
     color: white;
     border-radius: 5px;
     text-decoration: none;
@@ -182,5 +182,5 @@ canvas {
 }
 
 .social-share a:hover {
-    background-color: #0056b3; 
+    background-color: black; 
 }
